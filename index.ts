@@ -1,4 +1,26 @@
 // console.log("hello welcome to typescript ");
+  let name: string; // Only strings data type is assignable here
+  let age: number; // Only number data types assignable here 
+  let istrue: boolean; // Only boolean data types assignable here
+  let arrays: number[]; // That means this arrays should accept only number type
+  let role: [number, string]; // it means this are going to accept only types of 
+  // number and strings, this only contains two value here (Example of Tuples)
+
+  // Here we have created a object called person and assigned it a value of =>
+  // Person which means that Person keyboard, value pair is going to accept that =>
+  // data type which is defined in type Person; (ex, name is going to contains the data type string and age is number )
+  // Also must defined both value otherwise this will throw an error
+  // if we have to define only one value or miss some value then defined a ? mark next to the key eg:-(age?)
+  //
+  type Person = {
+    name: string;
+    age: number;
+  };
+
+  let person: Person = {
+    name: 'John',
+    age: 25
+  };
 
 let a: number = 16;
 // a = "sohail";
