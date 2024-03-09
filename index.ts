@@ -1,10 +1,11 @@
-// console.log("hello welcome to typescript ");
-  let name: string; // Only strings data type is assignable here
-  let age: number; // Only number data types assignable here 
-  let istrue: boolean; // Only boolean data types assignable here
-  let arrays: number[]; // That means this arrays should accept only number type
-  let role: [number, string]; // it means this are going to accept only types of 
+ let name: string; // Only strings data type is assignable here : (Types:String)
+  let age: number; // Only number data types assignable here  :  (Types:Number)
+  let istrue: boolean; // Only boolean data types assignable here : (Types:boolean)
+  let arrays: number[]; // That means this arrays should accept only number type  : (Types:array of a number)
+  let role: [number, string]; // it means this are going to accept only types of  : (Types:array of a number and strings (Tuples))
   // number and strings, this only contains two value here (Example of Tuples)
+  let address: string | number; // This is a example of union which means we can assign here number and strings as well : (Types:value of a number and strings (Union))
+
 
   // Here we have created a object called person and assigned it a value of =>
   // Person which means that Person keyboard, value pair is going to accept that =>
@@ -21,7 +22,6 @@
     name: 'John',
     age: 25
   };
-
 let a: number = 16;
 // a = "sohail";
 console.log(a);
